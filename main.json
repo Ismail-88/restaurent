@@ -1,0 +1,38 @@
+[
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Main%20Courses/1.web",
+        "name": "Fried Rice With Egg",
+        "description": "We make testy and healthy Fried Rice for our customers.",
+        "price": "₹ 0/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Main%20Courses/2.webp",
+        "name": "Special Noodles",
+        "description": "We make testy and healthy noodles for our customers.",
+        "price": "₹ 0/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Main%20Courses/3.jpg",
+        "name": "Cheese Burger",
+        "description": "We make testy and healthy Cheese Burger for our customers.",
+        "price": "₹ 0/-"
+    },
+    {
+        "images": "images/09-small.jpg",
+        "name": "Pizza",
+        "description": "We make testy and healthy Pizza for our customers.",
+        "price": "₹ 10/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Main%20Courses/5.jpg",
+        "name": "Pasta",
+        "description": "We make testy and healthy Pasta for our customers.",
+        "price": "₹ 0/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Main%20Courses/6.jpg",
+        "name": "Briyani",
+        "description": "We make testy and healthy Briyani for our customers.",
+        "price": "₹ 0/-"
+    }
+]

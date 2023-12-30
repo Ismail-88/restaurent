@@ -1,0 +1,1133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
+        aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="res navbar-brand col-lg-3 me-0" href="#">
+        <img src="images/logo.png" alt="logo" style="width: 170px;">
+      </a>
+      <div class="res col-lg-3 ">
+        <button id="bkBtn1" type="button" class="btn btn-outline-warning">Book Table</button>
+      </div>
+
+      <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+        <a class="res1 navbar-brand col-lg-3 me-0" href="#">
+          <img src="images/logo.png" alt="logo" style="width: 200px;">
+
+        </a>
+        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+          <li class="nav-item">
+            <a class="nav-link activelink" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu_gallery">Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery_section">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+        <div class="res1 d-lg-flex col-lg-3 justify-content-lg-end my-2">
+          <button id="bkBtn" type="button" class="btn btn-outline-warning">Book Table</button>
+            </div>
+           
+      </div>
+    </div>
+
+  </nav>
+  <form method="post" class="form4" id="booking-form">
+
+    <h2>Book your table</h2>
+     <div class="input-box">
+      <input type="text" name="name" class="box" id="name" placeholder="name" required="">
+      <input type="email" name="email" class="box" id="email" placeholder="email" required="">
+    </div>
+    <div class="input-box">
+      <input type="number" name="number" class="box" id="number" placeholder="number" required="">
+      <input type="date" name="date" class="box" id="date" required="">
+    </div>
+    <div class="input-box">
+      <input type="time" name="time" class="box" id="time" required="">
+      <input type="number" name="guests" class="box" id="guests" placeholder="guests" required="">
+    </div>
+
+   
+    <button type="submit" class="btn10" name="submit" id="submit">submit</button>
+    <button id="close" type="submit" class="btn10" name="submit" id="close">close</button>
+  
+    <span class="alert" id="message">
+      <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank You!</h2>
+            <p>You Were Registered Successfully.Thanks!</p>
+            <a href="#"><button onclick="CloseSlide()">Ok</button></a>
+        </div>
+
+    </span>
+
+  </form>
+  <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-ripple-init data-mdb-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-mdb-ripple-init>Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <!-- <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content  text-white" style="background-color: #000000cc;">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="submitModalLabel">Get An Account Hurry!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row g-3" id="modalCol">
+                    <div class="col-auto">
+                        <label for="staticEmail2" class="visually-hidden">Email</label>
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="example@gmail.com">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword2" class="visually-hidden">Password<label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> -->
+  <section id="home">
+   
+  <div id="myCarousel" class="carousel slide home" data-bs-ride="carousel">
+    <div class="carousel-controller">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Group 2 (1).png" class="d-block w-100 vh-100" alt="...">
+        <div class="pics">
+          <h2>ShineMoon City Restaurant</h2>
+          <p>We provide some discounts of our special customers.</p>
+          <a href="#" class="btn btn-outline-warning" role="button" data-bs="button" style="border-radius: 25px" ;>
+            Menu</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/copyimg.png" class="d-block w-100 vh-100" alt="...">
+
+        <div class="pics">
+          <h2>ShineMoon City Restaurant</h2>
+          <p>We provide some discounts of our special customers.</p>
+          <a href="#" class="btn btn-outline-warning" role="button" data-bs="button" style="border-radius: 25px" ;>
+            Menu</a>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="images/Group 4.png" class="d-block w-100 vh-100" alt="...">
+        <div class="pics">
+          <h2>ShineMoon City Restaurant</h2>
+          <p>We provide some discounts of our special customers.</p>
+          <a href="#" class="btn btn-outline-warning" role="button" data-bs="button" style="border-radius: 25px" ;>
+            Menu</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div class="modal2">
+  <div class="modal modal-sheet position-static d-block bg-transparent p-4 py-md-5" tabindex="-1" role="dialog" id="submitModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  -->
+  <section class="about" id="about">
+
+    <div class="box-container">
+
+      <div class="image">
+        <h4>Best Award Years of the experience</h4>
+        <img class="img-fluid" src="images/ab1.jpeg" alt="">
+      </div>
+
+      <div class="content1">
+        <div class="hea">
+        <h1>Mario Juicy<span> Welcomes You</span></h1>
+        <p>We are here from last 10 years to run our business and provide best services to our customers.
+          We have 40+ experince team and run business in 10+ countries.We are here from last 10 years to run our
+          business and provide best services to our customers.</p>
+        <p>We are here from last 10 years to run our business and provide best services to our customers.
+          We have 40+ experince team and run business in 10+ countries.We are here from last 10 years to run our
+          business and provide best services to our customers.</p>
+        </div>
+        <a href="#" class="btn2">Menu</a>
+
+        <!-- <div class="about-info">
+    
+              <div class="info-box">
+                <i class="fas fa-award"></i>
+                <h4 class="count">15+</h4>
+                <h5>Awards</h5>
+              </div>
+    
+              <div class="info-box">
+                <i class="fas fa-building"></i>
+                <h4 class="count">10+</h4>
+                <h5>Country</h5>
+              </div>
+    
+              <div class="info-box info-margin">
+                <i class="fas fa-users"></i>
+                <h4 class="count">40+</h4>
+                <h5>Team</h5>
+              </div>
+      
+            </div>  -->
+
+      </div>
+
+    </div>
+
+  </section>
+  <section class="deals">
+
+
+    <div class="heading">
+      <h2>Mario <span> Special deals</span></h2>
+    </div>
+    <div class="box20-container">
+    <div class="box2-container">
+
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd1.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>French fries deal</h3>
+            </div>
+            <div>
+              <h6 class="text">&#8377; 130/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy french fries for our customers.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd2.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Special pizza deal</h3>
+            </div>
+            <div>
+              <h6 class="text1">&#8377; 150/-<h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy pizza for our customers.
+          </p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd3.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Cheese burger deal</h3>
+            </div>
+            <div>
+              <h6 class="text">&#8377; 160/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy burger for our customers.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd4.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Special soup deal</h3>
+            </div>
+            <div>
+              <h6 class="text1">&#8377; 30/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy soup for our customers.
+          </p>
+
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd5.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Lunch special</h3>
+            </div>
+            <div>
+              <h6 class="text">&#8377; 70/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy launch for our customers.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd6.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Sandwich special</h3>
+            </div>
+            <div>
+              <h6 class="text1">&#8377; 60/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy dessert for our customers.
+          </p>
+
+        </div>
+      </div>
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd7.jpg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Fried Momos </h3>
+            </div>
+            <div>
+              <h6 class="text">&#8377; 130/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy momos for our customers.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="bg">
+          <img src="images/sd8.jpeg" alt="">
+        </div>
+        <div class="content">
+          <div class="issu">
+            <div>
+              <h3>Dessert special</h3>
+            </div>
+            <div>
+              <h6 class="text1">&#8377; 50/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p>We make testy and healthy dessert for our customers.
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu" id="menu_gallery">
+
+    <div class="heading">
+      <h2><span>Menu</span></h2>
+    </div>
+
+    <div class="menu-btns">
+
+      <button id="starterf" type="button" class="menu-btn actived" data-target="#Starters">Starters</button>
+
+      <button id="saladf" type="button" class="menu-btn" data-target="#Salads">Salads</button>
+      <button id="mainf" type="button" class="menu-btn" data-target="#Main-Course">Main Course</button>
+      <button id="dessertf" type="button" class="menu-btn" data-target="#Desserts">Desserts</button>
+      <button id="drinkf" type="button" class="menu-btn" data-target="#Drinks">Drinks</button>
+
+    </div>
+   <div class="box30-container">
+    <div class="box3-container">
+
+      <!-- <div class="menu-gallery active" id="Starters"> -->
+
+      <div class="menu-item1" style="--i:1">
+        <div class="bg1">
+          <img src="images/mst1.jpg" alt="" id="img1">
+        </div>
+        <div class="content">
+          <div class="issu1">
+            <div>
+              <h3 id="title1">Tomato soup</h3>
+            </div>
+            <div>
+              <h6 id="price1">30/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p id="dis1">We make testy and healthy Tomato soup for our customers.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="menu-item1" style="--i:2">
+        <div class="bg1">
+          <img src="images/mst2.jpg" alt="" id="img2">
+        </div>
+        <div class="content">
+          <div class="issu1">
+            <div>
+              <h3 id="title2">Chicken soup</h3>
+            </div>
+            <div>
+              <h6 id="price2">50/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p id="dis2">We make testy and healthy Chicken soup for our customers.
+          </p>
+
+        </div>
+      </div>
+
+
+      <div class="menu-item1" style="--i:3">
+        <div class="bg1">
+          <img src="images/mst3.jpg" alt="" id="img3">
+        </div>
+        <div class="content">
+          <div class="issu1">
+            <div>
+              <h3 id="title3">Hot & Sour soup</h3>
+            </div>
+            <div>
+              <h6 id="price3"> 40/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p id="dis3">We make testy and healthy Hot & Sour soup for our customers.
+          </p>
+
+        </div>
+      </div>
+      <div class="menu-item1" style="--i:4">
+        <div class="bg1">
+          <img src="images/mst4.jpg" alt="" id="img4">
+        </div>
+        <div class="content">
+          <div class="issu1">
+            <div>
+              <h3 id="title4">Sprinng Roll</h3>
+            </div>
+            <div>
+              <h6 id="price4">70/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p id="dis4">We make testy and healthy Spring Roll for our customers.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="menu-item1" style="--i:5">
+        <div class="bg1">
+          <img src="images/mst5.webp" alt="" id="img5">
+        </div>
+        <div class="content">
+          <div class="issu1">
+            <div>
+              <h3 id="title5">Chicken Wings</h3>
+            </div>
+            <div>
+              <h6 id="price5">80/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p id="dis5">We make testy and healthy Chicken Wings for our customers.
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <div class="menu-item1" style="--i:6">
+        <div class="bg1">
+          <img src="images/mst6.jpg" alt="" id="img6">
+        </div>
+        <div class="content">
+          <div class="issu1">
+            <div>
+              <h3 id="title6">Cheese Stick</h3>
+            </div>
+            <div>
+              <h6 id="price6">50/-</h6>
+            </div>
+          </div>
+          <hr>
+          <p id="dis6">We make testy and healthy heese Stick for our customers.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+    <section class="gallery-container" id="gallery_section">
+
+      <div class="heading">
+          <h2>our <span>gallery</span></h2>
+      </div>
+  
+  /    <div class="gallery">
+  
+        <div class="controls">
+          <button id="allf" type="button" class="menu1-btn actived" data-target="#All">All</button>
+
+      <button id="breakf" type="button" class="menu1-btn" data-target="#Breakfast">Breakfast</button>
+      <button id="lunchf" type="button" class="menu1-btn" data-target="#Lunch">Lunch</button>
+      <button id="dessertsf" type="button" class="menu1-btn" data-target="#Dessert">Dessert</button>
+      <button id="drinksf" type="button" class="menu1-btn" data-target="#Drink">Drink</button>
+        
+        </div>
+  
+        <div class="box4-container">
+  
+          <div class="gallery-item image Breakfast" id="gallerycontainer1">
+            <div class="issu3">
+              <img class="hgf" src="images/all1.webp" alt="Gallery-Image" id="iimg1">
+            </div>
+              <div class="content5">
+                  <h4 id="bf1" >Breakfast</h4>
+                  <p id="name1">Omelette Paratha</p>
+              </div>
+              <div class="view">
+               <a href="http://"></a><i class="fas fa-search-plus"></i></a>
+              </div>
+          </div>
+  
+          <div class="gallery-item image Breakfast" id="gallerycontainer2">
+            <div class="issu3">
+            <img class="hgf" src="images/all2.jpg" alt="Gallery-Image" id="iimg2">
+          </div>
+            <div class="content5">
+                <h4 id="bf2">Lunch</h4>
+                <p id="name2">Sabzi Paratha</p>
+            </div>
+            <div class="view">
+             
+                <i class="fas fa-search-plus"></i>
+            
+            </div>
+          </div>
+  
+          <div class="gallery-item image Lunch"id="gallerycontainer3">
+            <div class="issu3">
+            <img class="hgf" src="images/all3.jpg" alt="Gallery-Image" >
+            </div>
+            <div class="content5">
+                <h4>Lunch</h4>
+                <p>Kichdhi</p>
+            </div>
+            <div class="view">
+              
+                <i class="fas fa-search-plus"></i>
+            
+            </div>
+          </div>
+  
+          <div class="gallery-item image Lunch" id="gallerycontainer4">
+            <div class="issu3">
+            <img class="hgf" src="images/all4.jpg" alt="Gallery-Image" id="iimg4"id="gallerycontainer">
+          </div>
+            <div class="content5">
+                <h4 id="bf4">Lunch</h4>
+                <p id="name4">Veg Rice</p>
+            </div>
+            <div class="view">
+              
+                <i class="fas fa-search-plus"></i>
+            
+            </div>
+          </div>
+  
+          <div class="gallery-item image Desserts"id="gallerycontainer5">
+            <div class="issu3">
+            <img class="hgf" src="images/all5.jpeg" alt="Gallery-Image" id="iimg5">
+          </div>
+            <div class="content5">
+                <h4 id="bf5">Desserts</h4>
+                <p id="name5">Ice cream</p>
+            </div>
+            <div class="view">
+              
+                <i class="fas fa-search-plus"></i>
+            
+            </div>
+          </div>
+  
+          <div class="gallery-item image Desserts" id="gallerycontainer6">
+            <div class="issu3">
+            <img class="hgf" src="images/all6.jpg" alt="Gallery-Image" id="iimg6"id="gallerycontainer">
+          </div>
+            <div class="content5">
+                <h4 id="bf6">Desserts</h4>
+                <p id="name6">Cake</p>
+            </div>
+            <div class="view">
+              
+                <i class="fas fa-search-plus"></i>
+            
+            </div>
+          </div>
+  
+          <div class="gallery-item image Drinks" id="gallerycontainer7">
+            <div class="issu3">
+            <img  class="hgf" src="images/all7.jpg" alt="Gallery-Image" id="iimg7"id="gallerycontainer">
+          </div>
+            <div class="content5">
+                <h4 id="bf7">Drinks</h4>
+                <p id="name7">Coffee</p>
+            </div>
+            <div class="view">
+              
+                <i class="fas fa-search-plus"></i>
+              
+            </div>
+          </div>
+  
+          <div class="gallery-item image Drinks" id="gallerycontainer8">
+            <div class="issu3">
+            <img class="hgf" src="images/all8.jpg" alt="Gallery-Image" id="iimg8"id="gallerycontainer">
+          </div>
+            <div class="content5">
+                <h4 id="bf8">Drinks</h4>
+                <p id="name8">Tea</p>
+            </div>
+            <div class="view">
+              
+                <i class="fas fa-search-plus"></i>
+              
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section>
+
+
+    <section class="team" id="team">
+
+      <div class="heading">
+        <h2>our <span>team</span></h2>
+      </div>
+      <div class="box5-container">
+  
+        <div class="gallery-item1 image Breakfast">
+          <div class="issu5">
+            <img class="hgf" src="images/team1.jpg" alt="Gallery-Image" id="iimg1">
+          </div>
+            <!-- <div class="content6">
+                <h4 id="bf1" >Breakfast</h4>
+                <p id="name1">Omelette Paratha</p>
+            </div> -->
+            <div class="view1">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-whatsapp"></a>
+            </div>
+        </div>
+
+        <div class="gallery-item1 image Breakfast">
+          <div class="issu5">
+          <img class="hgf" src="images/team2.webp" alt="Gallery-Image">
+        </div>
+          <!-- <div class="content6">
+              <h4 id="bf2">Lunch</h4>
+              <p id="name2">Sabzi Paratha</p>
+          </div> -->
+          <div class="view1">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+          </div>
+        </div>
+
+        <div class="gallery-item1 image Lunch">
+          <div class="issu5">
+          <img class="hgf" src="images/team3.jpg" alt="Gallery-Image" >
+          </div>
+          <!-- <div class="content6">
+              <h4>Lunch</h4>
+              <p>Kichdhi</p>
+          </div> -->
+          <div class="view1">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+          </div>
+        </div>
+
+        <div class="gallery-item1 image Lunch">
+          <div class="issu5">
+          <img class="hgf" src="images/team4.webp" alt="Gallery-Image">
+        </div>
+          <!-- <div class="content6">
+              <h4 id="bf4">Lunch</h4>
+              <p id="name4">Veg Rice</p>
+          </div> -->
+          <div class="view1">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    
+    <section class="blog">
+      <div class="heading">
+        <h2>Our <span>Blogs</span></h2>
+      </div>
+        
+      <div class="box6-container">
+        <div class="blog-item">
+        
+          <div class="issu6">
+            <img src="images/bl1.jpg" alt="">
+            <div class="issu7">
+              <span class="title">1st<br> jan, 2022</span>
+              </div>
+          </div>
+          <!-- <div class="content7">
+            <a class="main-heading" href="#">special cooking</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Sed nam repellat nobis obcaecati sint distinctio.</p>  
+            <a href="#" class="btn">read more</a>
+          </div> -->
+        </div>
+  
+        <div class="blog-item">
+          
+          <div class="issu6">
+            <img src="images/bl2.webp" alt="">
+            <div class="issu7">
+              <span class="title">1st<br> jan, 2022</span>
+            </div>
+          </div>
+          
+          <!-- <div class="content7">
+            <a class="main-heading" href="#">restaurant dishes</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Sed nam repellat nobis obcaecati sint distinctio.</p>  
+            <a href="#" class="btn">read more</a>
+          </div> -->
+        </div>
+  
+        <div class="blog-item">
+         
+          <div class="issu6">
+            <img src="images/bl3.jpg" alt="">
+            <div class="issu7">
+              <span class="title">1st<br> jan, 2022</span>
+            </div>
+          </div>
+          <!-- <div class="content7">
+            <a class="main-heading" href="#">best coffee trends</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Sed nam repellat nobis obcaecati sint distinctio.</p>  
+            <a href="#" class="btn">read more</a>
+          </div> -->
+        </div>
+     </div>
+     
+  
+  </section>
+ <section id="contact">
+   <div class="heading">
+     <h2>Contact <span> Us</span></h2>
+   </div>
+  <div class="box7-container">
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.88103541342!2d78.71408187395748!3d12.786233218917488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad094f643c84b3%3A0x5727e2fab92e4956!2sMario%20juicy!5e0!3m2!1sen!2sin!4v1702139230087!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <form method="post" class="form" id="contactFrm">
+  <div class="form1">
+    <h2>Get in touch</h2>
+    <input type="text" name="Name" id="name" class="box" placeholder="Name" required="">
+    <br>
+    <input type="email" name="Email" id="email" class="box" placeholder="Email" required="">
+    <br>
+    <textarea cols="20" rows="8" name="message" id="message" class="box" placeholder="message"></textarea>
+    <button type="submit" class="btn8">submit</button>
+  </div>
+    <div class="response">
+      <div class="block">
+     <a href="#"> <i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    </div>
+
+  </form>
+  
+</section>
+
+<!-- Footer -->
+<footer class="bg-body-dark text-center">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-outline-light  btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto text-light">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example24" class="form-control" />
+              <label class="form-label" for="form5Example24">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="submit" class="btn btn-outline-light bg-warning mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <!-- <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+        harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section> -->
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-warning">Contact Info</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-light" href="#">+ 123 456 789</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">abc@gmai.com</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">Ambur</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-warning">Opening Hours</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-warning" href="#!">Monday - Saturday</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">11:00AM-11:00PM</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">11:00AM-11:00PM</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">11:00AM-11:00PM</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">11:00AM-11:00PM</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">11:00AM-11:00PM</a>
+            </li>
+            <li>
+              <a class="text-light" href="#!">11:00AM-11:00PM</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!-- <i class=""></i> -->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-warning">Quick Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-light  issu8" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="text-light  issu8" href="#about">About</a>
+            </li>
+            <li>
+              <a class="text-light  issu8" href="#menu_gallery">Menu</a>
+            </li>
+            <li>
+              <a class="text-light  issu8" href="#gallery_section">Gallery</a>
+            </li>
+            <li>
+              <a class="text-light  issu8" href="#team">Team</a>
+            </li>
+            
+            <li>
+              <a class="text-light issu8" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-warning">Quick Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-light " href="#menu_gallery">Breakfast</a>
+            </li>
+            <li>
+              <a class="text-light " href="#menu_gallery">Desserts</a>
+            </li>
+            <li>
+              <a class="text-light  "  href="#menu_gallery">Drinks</a>
+            </li>
+            <li>
+              <a class="text-light " href="#menu_gallery">Lunch</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+  <!-- style="background-color: rgba(153, 150, 150, 0.819);" -->
+  <!-- Copyright -->
+  <div class="text-center p-3 text-light footer1" >
+    © 2023 Copyright:
+    <a class="text-light fw-bold text-light" href="https://">MD Issu</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

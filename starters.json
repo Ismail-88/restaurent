@@ -1,0 +1,38 @@
+[
+    {
+        "images": "images/mst1.jpg",
+        "name": "Tomato soup",
+        "description": "We make testy and healthy Tomato soup for our customers.",
+        "price": "₹ 30/-"
+    },
+    {
+        "images": "images/mst2.jpg",
+        "name": "hicken soup",
+        "description": "We make testy and healthy Chicken soup for our customers.",
+        "price": "₹ 50/-"
+    },
+    {
+        "images": "images/mst3.jpg",
+        "name": "Hot & Sour soup",
+        "description": "We make testy and healthy Hot & Sour soup for our customers.",
+        "price": "₹ 40/-"
+    },
+    {
+        "images": "images/mst4.jpg",
+        "name": "Sprinng Roll",
+        "description": "We make testy and healthy Sprinng Roll for our customers.",
+        "price": "₹ 70/-"
+    },
+    {
+        "images": "images/mst5.webp",
+        "name": "Chicken Wings",
+        "description": "We make testy and healthy Chicken Wings for our customers.",
+        "price": "₹ 80/-"
+    },
+    {
+        "images": "images/mst6.jpg",
+        "name": "Cheese Stick",
+        "description": "We make testy and healthy Cheese Stick for our customers.",
+        "price": "₹ 50/-"
+    }
+]

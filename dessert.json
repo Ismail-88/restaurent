@@ -1,0 +1,38 @@
+[
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Desserts/1.jpg",
+        "name": "Ice Cream",
+        "description": "We make testy and healthy Ice Cream for our customers.",
+        "price": "₹ 120/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Desserts/2.jpg",
+        "name": "Chocolate Cake",
+        "description": "We make testy and healthy Chocolate Cake for our customers.",
+        "price": "₹ 80/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Desserts/3.jpg",
+        "name": "Strawberry Cake",
+        "description": "We make testy and healthy Strawberry Cake for our customers.",
+        "price": "₹ 60/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Desserts/4.jpg",
+        "name": "Cheese Cake",
+        "description": "We make testy and healthy Cheese Cake for our customers.",
+        "price": "₹ 50/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Desserts/5.jpg",
+        "name": "Cherry Pie",
+        "description": "We make testy and healthy Cherry Pie for our customers.",
+        "price": "₹ 40/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Desserts/6.jpg",
+        "name": "Cherry Pie",
+        "description": "We make testy and healthy Spinach Cherry Pie for our customers.",
+        "price": "₹ 0/-"
+    }
+]

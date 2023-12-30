@@ -1,0 +1,38 @@
+[
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Salads/1.jpg",
+        "name": "Chicken Caesar Salad",
+        "description": "We make testy and healthy Chicken Caesar Salad for our customers.",
+        "price": "₹ 120/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Salads/2.jpg",
+        "name": "Crispy Salad",
+        "description": "We make testy and healthy Crispy Salad for our customers.",
+        "price": "₹ 80/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Salads/3.jpg",
+        "name": "Vegetable Salad",
+        "description": "We make testy and healthy Vegetable Salad for our customers.",
+        "price": "₹ 60/-"
+    },
+    {
+        "images": "https://www.shutterstock.com/image-photo/plate-russian-salad-olivier-on-260nw-2200488133.jpg",
+        "name": "Russian Salad",
+        "description": "We make testy and healthy Russian Salad for our customers.",
+        "price": "₹ 150/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Salads/5.jpg",
+        "name": "Taco Salad",
+        "description": "We make testy and healthy Taco Salad for our customers.",
+        "price": "₹ 140/-"
+    },
+    {
+        "images": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/4/27/0/WU0210H_perfect-spinach-salad_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371606082753.jpeg",
+        "name": "Spinach Salad",
+        "description": "We make testy and healthy Spinach Salad for our customers.",
+        "price": "₹ 0/-"
+    }
+]

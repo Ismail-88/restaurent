@@ -1,0 +1,38 @@
+[
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Drinks/1.jpg",
+        "name": "Mineral Water",
+        "description": "We make testy and healthy Mineral Water for our customers.",
+        "price": "₹ 120/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Drinks/2.jpg",
+        "name": "Orange Juice",
+        "description": "We make testy and healthy Orange Juice for our customers.",
+        "price": "₹ 80/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Drinks/3.jpg",
+        "name": "Apple Juice",
+        "description": "We make testy and healthy Apple Juice for our customers.",
+        "price": "₹ 60/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Drinks/4.jpg",
+        "name": "Milkshake",
+        "description": "We make testy and healthy Milkshake for our customers.",
+        "price": "₹ 150/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Drinks/5.jpg",
+        "name": "Coffee",
+        "description": "We make testy and healthy Coffee for our customers.",
+        "price": "₹ 140/-"
+    },
+    {
+        "images": "https://shinemoon.rutilanttechnology.com/assets/images/Menu/Drinks/6.webp",
+        "name": "Tea",
+        "description": "We make testy and healthy Tea for our customers.",
+        "price": "₹ 0/-"
+    }
+]

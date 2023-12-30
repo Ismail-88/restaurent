@@ -1,0 +1,77 @@
+{
+    "breakfast": [
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Breakfast/1.webp",
+            "name": "Omlette Paratha",
+            "footType": "Breakfast"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Breakfast/2.jpg",
+            "name": "Sabzi Paratha",
+            "footType": "Lunch"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Breakfast/2.jpg",
+            "name": "Sabzi Paratha",
+            "footType": "Lunch"
+        }
+        
+    ],
+
+    "lunch": [
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Lunch/1.jpg",
+            "name": "Kichdi",
+            "footType": "lunch"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Lunch/2.jpg",
+            "name": "Veg Rice",
+            "footType": "Lunch"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Lunch/2.jpg",
+            "name": "Veg Rice",
+            "footType": "Lunch"
+        }
+        
+    ],
+
+    "desserts": [
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Desserts/1.jpeg",
+            "name": "Ice Cream",
+            "footType": "Dessert"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Desserts/2.jpg",
+            "name": "Cake",
+            "footType": "Dessert"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Desserts/2.jpg",
+            "name": "Cake",
+            "footType": "Dessert"
+        }
+        
+    ],
+    "drinks": [
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Drinks/1.jpg",
+            "name": "Coffee",
+            "footType": "Drinks"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Drinks/2.jpg",
+            "name": "Tea",
+            "footType": "Drinks"
+        },
+        {
+            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Drinks/2.jpg",
+            "name": "Tea",
+            "footType": "Drinks"
+        }
+        
+    ]
+
+}
