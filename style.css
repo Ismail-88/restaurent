@@ -9,7 +9,28 @@ body, h1, h2, p, input, textarea, button {
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #e4c312;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+  background-color: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e4c312;
+  cursor: pointer;
+}
+
+:root {
+  --default-color: #e4c312;
+}
 
 
 /* Style for the form container */

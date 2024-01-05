@@ -8,12 +8,12 @@
         {
             "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Breakfast/2.jpg",
             "name": "Sabzi Paratha",
-            "footType": "Lunch"
+            "footType": "Breakfast"
         },
         {
-            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Breakfast/2.jpg",
-            "name": "Sabzi Paratha",
-            "footType": "Lunch"
+            "images": "https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20180821150600/Indian-Breakfast-1024x682.jpg",
+            "name": "Idly & Dosa",
+            "footType": "Breakfast"
         }
         
     ],
@@ -30,8 +30,8 @@
             "footType": "Lunch"
         },
         {
-            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Lunch/2.jpg",
-            "name": "Veg Rice",
+            "images": "https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4=",
+            "name": "Briyani",
             "footType": "Lunch"
         }
         
@@ -49,9 +49,9 @@
             "footType": "Dessert"
         },
         {
-            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Desserts/2.jpg",
-            "name": "Cake",
-            "footType": "Dessert"
+            "images": "https://burst.shopifycdn.com/photos/berry-cheesecake.jpg?width=1000&format=pjpg&exif=0&iptc=0",
+            "name": "Berry-Cheese Cake",
+            "footType": "Breakfast"
         }
         
     ],
@@ -62,13 +62,13 @@
             "footType": "Drinks"
         },
         {
-            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Drinks/2.jpg",
+            "images": "https://imagevars.gulfnews.com/2021/11/02/Masala-chai_17cdf16efb3_medium.jpg",
             "name": "Tea",
             "footType": "Drinks"
         },
         {
-            "images": "https://shinemoon.rutilanttechnology.com/assets/images/Gallery/Drinks/2.jpg",
-            "name": "Tea",
+            "images": "https://images.unsplash.com/photo-1551782450-3939704166fc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9qaXRvfGVufDB8fDB8fHww",
+            "name": "Mojito",
             "footType": "Drinks"
         }
         

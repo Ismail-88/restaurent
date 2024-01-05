@@ -49,9 +49,9 @@ let title = ["title1", "title2", "title3", "title4", "title5", "title6"]
 let price = ["price1", "price2", "price3", "price4", "price5", "price6"]
 let dis = ["dis1", "dis2", "dis3", "dis4", "dis5", "dis6"]
 
-let galleryimg=["iimg1", "iimg2"]
-let gallerytitle = ["bf1", "bf2"]
-let galleryname = ["name1", "name2"]
+let galleryimg=["iimg1", "iimg2", "iimg3"]
+let gallerytitle = ["bf1", "bf2", "bf3"]
+let galleryname = ["name1", "name2", "name3"]
 let gallerydiv = ["gallerycontainer4", "gallerycontainer5", "gallerycontainer6", "gallerycontainer7", "gallerycontainer8"]
 
 
